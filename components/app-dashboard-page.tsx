@@ -13,8 +13,8 @@ const TestOption = ({ icon: Icon, title, description, color, onClick }) => (
     whileTap={{ scale: 0.95 }}
     onClick={onClick}
   >
-    <Icon className="w-12 h-12 mb-4" />
-    <h3 className="text-xl font-bold mb-2">{title}</h3>
+    <Icon className="text-gray-400 w-12 h-12 mb-4" />
+    <h3 className="text-gray-600 text-xl font-bold mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </motion.div>
 )
@@ -100,10 +100,6 @@ export function AppDashboardPage() {
           </motion.div>
         )}
       </main>
-
-      <footer className="mt-16 text-center text-gray-600">
-        <p>© 2023 Amify. All rights reserved.</p>
-      </footer>
     </div>
   )
 }
