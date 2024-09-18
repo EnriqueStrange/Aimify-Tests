@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Brain, Mic, Book, User, LogOut } from 'lucide-react'
 import Link from 'next/link'
 
-const TestOption = ({ icon: Icon, title, description, color, onClick }) => (
+const TestOption = ({ icon, title, description, color, onClick }) => (
   <motion.div
     className={`bg-white rounded-lg shadow-lg p-6 cursor-pointer ${color} transform transition-all duration-300 hover:scale-105`}
     whileHover={{ y: -5 }}
